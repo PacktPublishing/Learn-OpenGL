@@ -1,0 +1,1 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(312,5): error MSB3491: Could not write lines to file "Debug\GLApp.tlog\GLApp.lastbuildstate". The process cannot access the file '\\192.168.0.59\Videos\OpenGL\GLApp\GLApp\Debug\GLApp.tlog\GLApp.lastbuildstate' because it is being used by another process.

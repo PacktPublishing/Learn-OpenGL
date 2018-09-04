@@ -1,0 +1,26 @@
+SDL Camera Code Courtesy Of https://www.youtube.com/channel/UCtVQPiato7Uite06b2QDumQ
+
+
+GLboolean _lightOn = false;
+
+if(event.type == SDL_KEYUP){
+        switch(event.key.keysym.sym){
+        case SDLK_f:
+            if(_lightOn == false)
+            _lightOn = true;
+            else if(_lightOn == true)
+            _lightOn = false;
+            break;
+        }
+    }
+
+switch ON and OFF this part of code
+
+if(_lightOn == true){
+        glUniform1f(cutOffLoc, glm::cos(glm::radians(6.5f)));
+        glUniform1f(outerCutOffLoc, glm::cos(glm::radians(8.0f)));
+    }
+    else{
+        glUniform1f(cutOffLoc, glm::cos(glm::radians(0.0f)));
+        glUniform1f(outerCutOffLoc, glm::cos(glm::radians(0.0f)));
+    }

@@ -1,0 +1,11 @@
+﻿Build started 18/03/2016 16:10:23.
+     1>Project "\\psf\Home\Desktop\SFML_Windows\SFML_Windows\SFML_Windows.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /IC:\opengl\SFML\include /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D SFML_STATIC /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Release\\" /Fd"Release\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>main.cpp(7): fatal error C1083: Cannot open include file: 'GL/glew.h': No such file or directory
+     1>Done Building Project "\\psf\Home\Desktop\SFML_Windows\SFML_Windows\SFML_Windows.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.17

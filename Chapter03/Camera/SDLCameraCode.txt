@@ -1,0 +1,41 @@
+SDL Camera Code Courtesy Of https://www.youtube.com/channel/UCtVQPiato7Uite06b2QDumQ
+
+SDL_SetRelativeMouseMode(SDL_TRUE); //it includes SDL_ShowCursor(SDL_DISABLE); and you dont need it anymore, + you need it for relative mouse mode
+
+void MainGameSDL::pollEvents(){
+    
+SDL_Event event;
+   
+ while(SDL_PollEvent(&event)){
+
+        if(event.type == SDL_QUIT){   //QUIT part will be different for each of you, but maybe same.. its just my realization
+        _closed = true;
+        break;
+        }
+
+if(event.type == SDL_KEYDOWN){
+        switch(event.key.keysym.sym){
+        case SDLK_w:
+            camera.ProcessKeyboard(FORWARD, _deltaTime);
+            break;
+        case SDLK_s:
+            camera.ProcessKeyboard(BACKWARD, _deltaTime);
+            break;
+        case SDLK_a:
+            camera.ProcessKeyboard(LEFT, _deltaTime);
+            break;
+        case SDLK_d:
+            camera.ProcessKeyboard(RIGHT, _deltaTime);
+            break;
+        }
+    }
+
+if(event.type == SDL_MOUSEMOTION){
+    GLfloat xOffset, yOffset;
+    xOffset = event.motion.xrel;
+    yOffset = event.motion.yrel;
+
+    camera.ProcessMouseMovement(xOffset, -yOffset);
+    }
+}
+

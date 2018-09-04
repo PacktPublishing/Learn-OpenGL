@@ -1,0 +1,13 @@
+﻿Build started 18/03/2016 16:13:05.
+     1>Project "\\psf\Home\Desktop\SFML_Windows\SFML_Windows\SFML_Windows.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /IC:\opengl\glew\include /IC:\opengl\SFML\include /ZI /nologo /W3 /WX- /Od /Oy- /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"\\psf\Home\Desktop\SFML_Windows\Debug\SFML_Windows.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\opengl\glew\lib\Release\Win32 /LIBPATH:C:\opengl\SFML\lib "sfml-graphics.lib" "sfml-window.lib" "sfml-system.lib" glew32s.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"\\psf\Home\Desktop\SFML_Windows\Debug\SFML_Windows.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"\\psf\Home\Desktop\SFML_Windows\Debug\SFML_Windows.lib" /MACHINE:X86 Debug\main.obj
+         SFML_Windows.vcxproj -> \\psf\Home\Desktop\SFML_Windows\Debug\SFML_Windows.exe
+     1>Done Building Project "\\psf\Home\Desktop\SFML_Windows\SFML_Windows\SFML_Windows.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.57
